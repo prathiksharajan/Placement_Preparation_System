@@ -1,0 +1,90 @@
+/* Resetting default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container */
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Form container styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input groups */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Heading styling */
+h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Add and remove buttons for dynamic fields */
+button[type="button"] {
+  background-color: #f44336;
+  margin-top: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #e53935;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Input spacing */
+input, textarea {
+  margin-bottom: 15px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+  .App {
+    width: 100%;
+    padding: 10px;
+  }
+}
